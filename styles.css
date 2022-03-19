@@ -1,0 +1,141 @@
+/* Google Fonts
+font-family: 'Bebas Neue', cursive;
+font-family: 'Pontano Sans', sans-serif; 
+*/
+
+/* HTML Elements */
+p {
+    padding: 10% 50%;
+}
+
+/* Navbar */
+
+.navbar {
+    margin: 0;
+    background-color: #fff;
+    padding-top: 1rem;
+}
+
+.nav-link {
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 1.25em;
+    color: #3A454F;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: #3A454F;
+}
+
+.navbar-brand img {
+    width: 40rem;  
+    padding-left: 10%;
+}
+
+.container-fluid {
+    padding: 0% 4% 7%;
+}
+
+.container-fluid .btn {
+    margin: 0 5% 0 2% ;
+    background-color: #BF8598;
+    color: #fff;
+    font-family: 'Pontano Sans';
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    padding: 1% 2%;
+    transition: all .5s ease;
+}
+
+.container-fluid .btn:hover {
+    background-color: #DAA5AD;
+    border: solid .1px black;
+}
+
+/* Hover animation */
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 67%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 9px;
+    left: 15px;
+    background-color: #DAA5AD;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/*Landing Image */
+
+.landing-image {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding-top: 10%;
+    justify-content: center;
+    background-color: black;
+    /* background-attachment: fixed; */
+}
+
+.landing-image::before {
+    content: "";
+    background-image: url("/photos/empower-room.JPG");
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    opacity: .5;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+.mission-statement {
+    position: relative;
+    padding: 0 8%;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    letter-spacing: .4rem;
+    color: #fff;
+    -webkit-text-stroke-width: .75px;
+    /* -webkit-text-stroke-color: black; */
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .navbar-brand img {
+        width: 20rem;  
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 990px) {
+    .navbar-brand {
+        margin: auto;
+    }
+}
