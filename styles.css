@@ -3,6 +3,12 @@ font-family: 'Bebas Neue', cursive;
 font-family: 'Pontano Sans', sans-serif; 
 */
 
+/* Color pallette 
+#3A454F
+#BF8598
+#DAA5AD;
+
+
 /* HTML Elements */
 html,body{
     overflow-x: hidden;
@@ -46,7 +52,7 @@ p {
 
 .container-fluid .btn {
     margin: 0 5% 0 2% ;
-    background-color: #BF8598;
+    background-color: #DAA5AD;
     color: #fff;
     font-family: 'Pontano Sans';
     font-size: 1.2em;
@@ -56,8 +62,8 @@ p {
     transition: all .5s ease;
 }
 
-.container-fluid .btn:hover {
-    background-color: #DAA5AD;
+.btn:hover {
+    background-color: #BF8598;
     border: solid .1px black;
 }
 
@@ -114,7 +120,16 @@ p {
 
 .landing-button {
     position: absolute;
-    bottom: 38%;
+    bottom: 33%;
+    background-color: #DAA5AD;;
+    color: #fff;
+    font-family: 'Pontano Sans';
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: all .5s ease;
+    margin: auto;
 }
 
 .mission-statement {
@@ -139,6 +154,17 @@ p {
     
 }
 
+@media (min-width: 416px) and (max-width: 821px) {
+    #tablet-hide {
+        display:none;
+    }
+
+    .mission-statement {
+        padding: 25% 10%;
+        font-size: 3rem;
+    }
+}
+
 @media (max-width: 415px) {
     .navbar-brand {
         margin: auto;
@@ -146,11 +172,11 @@ p {
 
     #empower-logo {
         width: 17rem;
-        padding-right: 5%;
+        padding-right: 4%;
     }
 
     .mission-statement {
-        padding-top: 25%;
+        padding: 20% 10%;
         font-size: 3rem;
     }
 
