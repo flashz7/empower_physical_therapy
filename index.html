@@ -19,6 +19,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pontano+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            const mediaQuery = window.matchMedia('(max-width: 415px)')
+            const tabletSize = window.matchMedia('(max-width: 990px)')
+            
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.paddingLeft = "1%";
+            document.getElementById("navbar").style.opacity = "95%";
+            if (mediaQuery.matches) {
+                document.getElementById("empower-logo").style.width = "17rem";
+            } else if (tabletSize.matches){
+                document.getElementById("navbar").style.paddingLeft = "0";
+                return            
+            } else {
+                document.getElementById("empower-logo").style.width = "20rem";
+            }
+          } else {
+            document.getElementById("navbar").style.paddingTop = "1rem 0 0 0";
+            document.getElementById("navbar").style.paddingLeft = "0";
+            if (mediaQuery.matches) {
+                document.getElementById("empower-logo").style.width = "17rem";
+            } else {
+                document.getElementById("empower-logo").style.width = "40rem";
+            }         
+         }
+        }
+    </script>
 </head>
 
 <body>
@@ -27,7 +57,7 @@
 
             <!-- Nav Bar -->
 
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
                 <a class="navbar-brand" href="#"><img id="empower-logo" src="/photos/Empower+PT+logo_horizontal+2.png"
                         alt="Empower logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -46,8 +76,11 @@
 
         </div>
         <div class="landing-image">
-            <h1 class="mission-statement">Empowering women across north county san diego through pelvic floor therapy, prenatal care, and postpartum recovery</h1>
+            <h1 class="mission-statement">Empowering women across north county san diego <span id="mobile-hide">through pelvic floor therapy, prenatal care, and postpartum recovery</span></h1>
+            <a class="btn btn-primary btn-lg landing-button" href="#" role="button">Link</a>
+
         </div>
+
     </section>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Gravida dictum fusce ut placerat. Neque gravida in fermentum et sollicitudin ac orci phasellus. Lorem donec massa sapien faucibus et molestie. Lacinia at quis risus sed vulputate odio ut. Sed augue lacus viverra vitae congue eu. Mi bibendum neque egestas congue quisque egestas diam in. Fringilla est ullamcorper eget nulla. Elementum nisi quis eleifend quam. A diam maecenas sed enim ut sem.
 
