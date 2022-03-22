@@ -14,10 +14,6 @@ html,body{
     overflow-x: hidden;
 }
 
-p {
-    padding: 10% 50%;
-}
-
 /* Navbar */
 
 .navbar {
@@ -46,11 +42,11 @@ p {
     transition: width .8s;
 }
 
-.container-fluid {
+.navigation {
     padding: 0% 4% 7%;
 }
 
-.container-fluid .btn {
+.navigation .btn {
     margin: 0 5% 0 2% ;
     background-color: #DAA5AD;
     color: #fff;
@@ -144,7 +140,21 @@ p {
     text-align: center;
 }
 
+/* Services Section */
 
+.card-heading {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+.services {
+    background-color: #fff;
+    
+}
+
+.service-column {
+    text-align: center;
+}
 
 @media (min-width: 500px) and (max-width: 1200px) {
     .navbar-brand {
